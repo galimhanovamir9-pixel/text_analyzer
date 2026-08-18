@@ -15,3 +15,12 @@ for char in text.lower():
         vowels_number += 1
 
 print(f'Количество гласных букв : {vowels_number}')
+consonants = "бвгджзйклмнпрстфхцчшщ"
+
+consonants_number = 0
+
+for char in text.lower():
+    if char in consonants:
+        consonants_number += 1
+
+print(f'Количество согласных букв: {consonants_number}')
