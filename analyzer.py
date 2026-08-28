@@ -16,10 +16,17 @@ else:
 # создаем перемнную со всеми гласными
 vowels = "аеёиоуыэюя"
 vowels_number = 0
+# создаем переменную с количеством согласных
+consonants_number = 0
 # перебираем гласные
 for char in text.lower():
     if char in vowels:
         vowels_number += 1
+# перебираем согласные
+    elif char.isalpha():        
+        consonants_number += 1
 
 # выводим количество гласных
 print(f'Количество гласных букв : {vowels_number}')
+# выводим количество согласных
+print(f'Количество согласных букв : {consonants_number}')
